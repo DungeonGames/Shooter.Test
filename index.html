@@ -74,16 +74,17 @@
     const maxPixelRatioMobile = 2.0;
     const maxPixelRatioDesktop = 1.5;
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var maxDevicePixelRatio = isMobile? maxPixelRatioMobile: maxPixelRatioDesktop;
+    var isIOSDevice = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    var isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var maxDevicePixelRatio = isMobileDevice? maxPixelRatioMobile: maxPixelRatioDesktop;
     var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
 
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/Build.loader.js";
     var config = {
-      dataUrl: buildUrl + "/89da3ef136680891b31a86076bae3233.data.unityweb",
-      frameworkUrl: buildUrl + "/0d6b3acdcdb49624a9a3010ba44c78b2.js.unityweb",
-      codeUrl: buildUrl + "/62a6cae7f15e0c67c58a9cb0f1ee4f8f.wasm.unityweb",
+      dataUrl: buildUrl + "/c9ddea55ba482f088c83b037564ab94c.data.unityweb",
+      frameworkUrl: buildUrl + "/dc652433f57793163def0010760eb0b0.js.unityweb",
+      codeUrl: buildUrl + "/6ea0bbf7b7a21b1184fe0ff4b7931279.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DungeonGames",
       productName: "Shooter",
